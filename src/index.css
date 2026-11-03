@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --color-ivory: #FAF7F2;
+    --color-champagne: #F5EFE6;
+    --color-champagne-light: #FBF9F5;
+    --color-espresso: #171210;
+    --color-espresso-card: #221B18;
+    --color-gold: #C5A059;
+    --color-gold-light: #DFBE75;
+    --color-bronze: #8C6D58;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    background-color: #FAF7F2;
+    color: #171210;
+  }
+
+  ::selection {
+    background-color: #C5A059;
+    color: #FAF7F2;
+  }
+}
+
+.font-serif {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* Luxury subtle glassmorphism and borders */
+.luxury-glass {
+  background: rgba(250, 247, 242, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.luxury-glass-dark {
+  background: rgba(23, 18, 16, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #D4AF37 0%, #C5A059 50%, #8C6D58 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.shimmer-gold {
+  background: linear-gradient(90deg, transparent, rgba(197, 160, 89, 0.15), transparent);
+}
